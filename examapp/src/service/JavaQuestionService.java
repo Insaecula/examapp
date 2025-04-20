@@ -22,6 +22,11 @@ public class JavaQuestionService  implements QuestionService {
     }
 
     @Override
+    public Question add(Question question) {
+        return null;
+    }
+
+    @Override
     public Question remove(String question, String answer) {
         Question q = new Question(question, answer);
         if (!questions.remove(q)) {
